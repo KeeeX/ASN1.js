@@ -1,3 +1,8 @@
+## Note about this repository
+
+This repository should be a 1:1 mirror of the original repository but build ES5-compatible files for obscure business reasons.
+The package is modified to build using a `postinstall` hook.
+
 ## ASN1js
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/PeculiarVentures/ASN1.js/master/LICENSE) [![CircleCI](https://circleci.com/gh/PeculiarVentures/ASN1.js.svg?style=svg)](https://circleci.com/gh/PeculiarVentures/ASN1.js) [![NPM version](https://badge.fury.io/js/asn1js.svg)](http://badge.fury.io/js/asn1js) [![Coverage Status](https://coveralls.io/repos/github/PeculiarVentures/ASN1.js/badge.svg?branch=master)](https://coveralls.io/github/PeculiarVentures/ASN1.js?branch=master)
