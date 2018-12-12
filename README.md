@@ -1,7 +1,8 @@
 ## Note about this repository
 
 This repository should be a 1:1 mirror of the original repository but build ES5-compatible files for obscure business reasons.
-The package is modified to build using a `postinstall` hook.
+To use it, install from the git repository using `npm install https://github.com/KeeeX/ASN1.js.git#releases`.
+The `releases` branch contain the built files and should work as a drop-in replacement when needed.
 
 ## ASN1js
 

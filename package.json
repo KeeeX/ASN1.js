@@ -66,8 +66,13 @@
     "build:tests": "npm run build:examples",
     "test": "cross-env NODE_ENV=test nyc mocha --require @babel/register",
     "prepublishOnly": "npm run build",
-    "postinstall": "npm run build && npm run buildBrowser"
+    "prepack": "npm run build && npm run buildBrowser"
   },
   "version": "2.0.21-es5",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "build/**/*",
+    "buildBrowser/**/*",
+    "LICENSE"
+  ]
 }
