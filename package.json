@@ -31,10 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/CleyFaye/asn1.js.git"
+    "url": "git://github.com/KeeeX/asn1.js.git"
   },
   "dependencies": {
-    "pvutils": "latest"
+    "pvutils": "git+https://github.com/KeeeX/pvutils.git#releases"
   },
   "description": "asn1js is a pure JavaScript library implementing this standard. ASN.1 is the basis of all X.509 related data structures and numerous other protocols used on the web",
   "keywords": [
@@ -69,10 +69,5 @@
     "prepack": "npm run build && npm run buildBrowser"
   },
   "version": "2.0.21-es5",
-  "license": "MIT",
-  "files": [
-    "build/**/*",
-    "buildBrowser/**/*",
-    "LICENSE"
-  ]
+  "license": "MIT"
 }
