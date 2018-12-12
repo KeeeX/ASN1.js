@@ -6,10 +6,6 @@ The `releases` branch contain the built files and should work as a drop-in repla
 
 ## ASN1js
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/PeculiarVentures/ASN1.js/master/LICENSE) [![CircleCI](https://circleci.com/gh/PeculiarVentures/ASN1.js.svg?style=svg)](https://circleci.com/gh/PeculiarVentures/ASN1.js) [![NPM version](https://badge.fury.io/js/asn1js.svg)](http://badge.fury.io/js/asn1js) [![Coverage Status](https://coveralls.io/repos/github/PeculiarVentures/ASN1.js/badge.svg?branch=master)](https://coveralls.io/github/PeculiarVentures/ASN1.js?branch=master)
-
-[![NPM](https://nodei.co/npm-dl/asn1js.png?months=3&height=2)](https://nodei.co/npm/asn1js/)
-
 Abstract Syntax Notation One (ASN.1) is a standard and notation that describes rules and structures for representing, encoding, transmitting, and decoding data in telecommunications and computer networking. [ASN1js][] is a pure JavaScript library implementing this standard.  ASN.1 is the basis of all X.509 related data structures and numerous other protocols used on the web.
 
 ## Important Information for ASN1.js V1 Users
