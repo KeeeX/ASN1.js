@@ -1,0 +1,78 @@
+{
+  "author": {
+    "email": "yury@strozhevsky.com",
+    "name": "Yury Strozhevsky"
+  },
+  "contributors": [
+    {
+      "email": "rmh@unmitigatedrisk.com",
+      "name": "Ryan Hurst"
+    },
+    {
+      "email": "gabriel@keeex.net",
+      "name": "Gabriel Paul \"Cley Faye\" Risterucci"
+    }
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/register": "latest",
+    "asn1-test-suite": "latest",
+    "babel-plugin-istanbul": "^4.1.5",
+    "cross-env": "^5.1.4",
+    "mocha": "^3.0.2",
+    "nyc": "^11.6.0",
+    "rollup": "latest",
+    "rollup-plugin-node-resolve": "^1.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CleyFaye/asn1.js.git"
+  },
+  "dependencies": {
+    "pvutils": "latest"
+  },
+  "description": "asn1js is a pure JavaScript library implementing this standard. ASN.1 is the basis of all X.509 related data structures and numerous other protocols used on the web",
+  "keywords": [
+    "asn1",
+    "parser",
+    "asn.1",
+    "ber",
+    "der",
+    "sequence",
+    "set",
+    "bitstring",
+    "octetstring",
+    "utctime",
+    "utf8string",
+    "bmpstring",
+    "universalstring",
+    "generalizedtime"
+  ],
+  "jsnext:main": "./src/asn1.js",
+  "browser": "./buildBrowser/asn1.js",
+  "main": "./build/asn1.js",
+  "name": "asn1js",
+  "scripts": {
+    "build": "babel src --no-babelrc --config-file=./node.babelrc --out-dir=build --source-maps",
+    "buildBrowser": "babel src --no-babelrc --config-file=./browser.babelrc --out-dir=buildBrowser --source-maps",
+    "watch": "babel src --compact=false --out-dir build --source-maps --watch",
+    "ex1": "cd examples/ASN1Usage && npm run build && cd ../..",
+    "build:examples": "npm run ex1",
+    "build:tests": "npm run build:examples",
+    "test": "cross-env NODE_ENV=test nyc mocha --require @babel/register",
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build && npm run buildBrowser"
+  },
+  "version": "2.0.21-es5",
+  "license": "MIT",
+  "files": [
+    "build/**/*",
+    "buildBrowser/**/*",
+    "LICENSE"
+  ]
+}
